@@ -1,0 +1,64 @@
+img {
+  width: 130px;
+  height: 160px;
+}
+.moveiDetail {
+  position: relative;
+}
+.moveiDetail .button {
+  position: absolute;
+  top: 0px;
+  left: 10px;
+}
+.moveiDetail .button button {
+  padding: 3px 5px;
+  border-radius: 50%;
+  color: black;
+  border: none;
+  background-color: white;
+}
+.moveiDetail header {
+  background-color: #212529;
+  display: flex;
+  gap: 15px;
+}
+.moveiDetail header div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: self-start;
+  padding-top: 10px;
+}
+.moveiDetail p {
+  padding: 5px 0;
+}
+.moveiDetail section {
+  padding: 30px;
+}
+.moveiDetail section p {
+  padding: 8px 0;
+}
+.rating {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+  gap: 12px;
+
+  border-radius: 6px;
+  padding: 10px;
+  background-color: #343a40;
+}
+.rating button {
+  background-color: #6741d9;
+  cursor: pointer;
+  border-radius: 14px;
+  color: white;
+  padding: 7px 60px;
+  border: none;
+}
+svg {
+  width: 20px;
+  height: 20px;
+}

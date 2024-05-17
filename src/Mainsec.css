@@ -1,0 +1,98 @@
+.boxes {
+  display: flex;
+  padding: 20px;
+  gap: 10px;
+}
+.box {
+  position: relative;
+  flex-basis: 50%;
+  background-color: #2b3035;
+  min-height: 80vh;
+  border-radius: 5px;
+}
+.box-errors {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 150px;
+}
+.filmbox {
+  display: flex;
+  gap: 20px;
+  padding: 15px;
+  border-bottom: 0.5px solid #adb5bd;
+}
+.filmbox:hover {
+  background-color: #343a40;
+  transition: 0.6s;
+}
+.filmbox .resumeinfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.filmbox img {
+  width: 50px;
+  height: 60px;
+}
+.btn {
+  position: absolute;
+  z-index: 100;
+  top: 15px;
+  right: 15px;
+}
+.btn button {
+  background-color: #212529;
+  color: #dee2e5;
+  border-radius: 50%;
+  border: none;
+  padding: 2px 5px;
+}
+.totalinfo {
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #343a40;
+  box-shadow: 0 10px 20px 3px #111;
+}
+.totalinfo div {
+  display: flex;
+  justify-content: space-between;
+}
+.totalinfo h4 {
+  margin-bottom: 10px;
+}
+.filmboxinfo .rating {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.filmbox .image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.filmboxinfo {
+  padding: 10px;
+  flex-basis: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.filmbox h2 {
+  text-align: center;
+  margin-top: 50px;
+}
+.btn-close {
+  background-color: red;
+  padding: 1px 4px;
+  font-size: 10px;
+  color: white;
+  border-radius: 50%;
+  align-self: center;
+  border: none;
+}
+.ratings {
+  display: flex;
+  justify-content: space-between;
+}
