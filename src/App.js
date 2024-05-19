@@ -3,47 +3,6 @@ import "./App.css";
 import Mainsec from "./Mainsec";
 import Navbar from "./Navbar";
 
-const tempMovieData = [
-  {
-    imdbID: "tt1375666",
-    Title: "Inception",
-    Year: "2010",
-    Poster: "https://m.media-amazon.com/images/I/91KCSzHkEgL._AC_SL1500_.jpg",
-  },
-  {
-    imdbID: "tt0133093",
-    Title: "the matrix",
-    Year: "1999",
-    Poster: "https://m.media-amazon.com/images/I/71x4xcUUtXL._AC_SL1500_.jpg",
-  },
-  {
-    imdbID: "tt6751668",
-    Title: "Parasite",
-    Year: "2019",
-    Poster: "https://m.media-amazon.com/images/I/81mMcPqIJiL._AC_SL1500_.jpg",
-  },
-];
-
-const tempWatchedData = [
-  {
-    imdbID: "tt1375666",
-    Title: "Inception",
-    Year: "2010",
-    Poster: "https://m.media-amazon.com/images/I/91KCSzHkEgL._AC_SL1500_.jpg",
-    Runtime: 148,
-    imdbRating: 8.8,
-    userRating: 10,
-  },
-  {
-    imdbID: "tt0133093",
-    Title: "the matrix",
-    Year: "1999",
-    Poster: "https://m.media-amazon.com/images/I/71x4xcUUtXL._AC_SL1500_.jpg",
-    Runtime: 116,
-    imdbRating: 8.5,
-    userRating: 9,
-  },
-];
 const key = "646a8f8c";
 
 function App() {
