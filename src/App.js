@@ -7,11 +7,17 @@ const key = "646a8f8c";
 
 function App() {
   const [movies, setMovies] = useState([]);
-  const [watchedmovie, setWatchedmovie] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState("");
   const [query, setQuery] = useState("");
   const [selectedID, setSelectedID] = useState("");
+  //const [watchedmovie, setWatchedmovie] = useState([])
+
+  const [watchedmovie, setWatchedmovie] = useState(function () {
+    const storedValue = localStorage.getItem("watched");
+
+    return JSON.parse(storedValue);
+  });
 
   function handelAddTolist(newmovie) {
     setWatchedmovie((watchedmovie) => [...watchedmovie, newmovie]);
@@ -24,7 +30,12 @@ function App() {
   function handelcoloseMovieDetail() {
     setSelectedID(null);
   }
-
+  useEffect(
+    function () {
+      localStorage.setItem("watched", JSON.stringify(watchedmovie));
+    },
+    [watchedmovie]
+  );
   useEffect(
     function () {
       const controller = new AbortController();
